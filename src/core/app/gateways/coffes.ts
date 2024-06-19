@@ -11,7 +11,6 @@ export class CoffesHttpGateway {
   async getCoffes() {
     const response = await this.http.get("coffee/hot");
     const data = response.data as Coffe[];
-    data.map((coffe) => new Coffe(coffe));
-    return data;
+    return data.map((coffe) => new Coffe(coffe));
   }
 }
