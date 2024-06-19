@@ -7,5 +7,6 @@ export class ContainerRegistry {
 
   //gateways ----
   CoffesHttpGateway = new CoffesHttpGateway(http);
+  //use cases ----
   GetCoffesUseCase = new GetCoffesUseCase(this.CoffesHttpGateway);
 }
